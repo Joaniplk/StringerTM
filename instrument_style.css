@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(19, 3, 56);
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0px;
+}
+#card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#logo{
+    user-select: none;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 500%;
+    font-family: 'Fugaz One', cursive;
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 916px;
+    width: calc(100% - 20px);
+}
+
+
+.card{
+    background-color: rgb(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 10px;
+    width: 260px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 400ms ease;
+    transition: border 620ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.card:hover{
+    background-color: rgba(200, 200, 200, 0.25);
+    border: 1px solid rgba(255, 255, 255);
+    z-index: 2;
+}
+
+label{
+    user-select: none;
+    color: rgb(233, 221, 206);
+    font-size: 350%;
+    font-family: 'Lobster', cusrive, sans-serif;
+    cursor: pointer;
+}
+.first-letter{
+    font-family: 'Fugaz One', cursive;
+}
+#menu-background-pattern {
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 9%, 
+      transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    height: 100vh;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease, 
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100vw;
+    z-index: 1;
+  }
+a{
+    text-decoration: none;
+}
+/*
+.card::before {
+    background: radial-gradient(
+        800px circle at 100px 100px,
+        rbga(255, 255, 255, 0.06),
+        transparent 40%
+    );
+    transition: opacity 500ms;
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+*/
