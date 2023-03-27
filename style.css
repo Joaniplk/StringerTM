@@ -97,6 +97,7 @@ h1{
 }
 #dot{
     font-size: 20px;
+    visibility: hidden;
 }
 p{
     color: beige;
